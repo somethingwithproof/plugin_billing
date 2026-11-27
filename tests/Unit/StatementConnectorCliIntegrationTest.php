@@ -292,17 +292,47 @@ final class StatementConnectorCliIntegrationTest extends TestCase {
 		$this->assertSame('[REDACTED]', $debug[0]['fields']['secret_keyfile_value']['value']);
 
 		$mcpReg = new class() {
+			/** @var list<string> */
+			public array $events = [];
 			/** @var array<string, array<string, mixed>> */
 			public array $abilities = [];
+			public function registerCategory(string $id, string $label): void {
+				$this->events[] = 'category:' . $id . ':' . $label;
+			}
+			/** @param array<string, mixed> $spec */
 			public function register(string $name, array $spec): void {
+				$this->events[]         = 'ability:' . $name;
 				$this->abilities[$name] = $spec;
 			}
 		};
 		billing_abilities_register($mcpReg);
+		$this->assertSame('category:billing:Billing', $mcpReg->events[0] ?? null);
+		$this->assertSame('ability:billing-list-accounts', $mcpReg->events[1] ?? null);
 		$this->assertArrayHasKey('billing-list-accounts', $mcpReg->abilities);
 		$this->assertArrayHasKey('billing-get-forecast', $mcpReg->abilities);
 		$this->assertArrayHasKey('billing-verify-statement', $mcpReg->abilities);
 		$this->assertSame(1000, $mcpReg->abilities['billing-list-accounts']['output_schema']['properties']['accounts']['maxItems']);
+
+		foreach ($mcpReg->abilities as $abilityId => $spec) {
+			$this->assertSchemaClosedAndBounded($spec['input_schema'], $abilityId . '.input_schema');
+			$this->assertSchemaClosedAndBounded($spec['output_schema'], $abilityId . '.output_schema');
+		}
+
+		// Duplicate category LogicException must not abort ability registration.
+		$dupMcpReg = new class() {
+			/** @var array<string, array<string, mixed>> */
+			public array $abilities = [];
+			public function registerCategory(string $id, string $label): void {
+				throw new \LogicException('Duplicate category');
+			}
+			/** @param array<string, mixed> $spec */
+			public function register(string $name, array $spec): void {
+				$this->abilities[$name] = $spec;
+			}
+		};
+		billing_abilities_register($dupMcpReg);
+		$this->assertCount(3, $dupMcpReg->abilities);
+
 		$acctList = ($mcpReg->abilities['billing-list-accounts']['execute'])(1, new \stdClass());
 		$this->assertCount(1, $acctList['accounts']);
 
@@ -333,5 +363,42 @@ final class StatementConnectorCliIntegrationTest extends TestCase {
 		$p1 = ConfigSchema::plan(Settings::fromRow([])->toConfigArray(), ['billing_default_currency' => 'GBP']);
 		$p2 = ConfigSchema::plan(Settings::fromRow([])->toConfigArray(), ['billing_default_currency' => 'GBP']);
 		$this->assertSame($p1['plan_hash'], $p2['plan_hash']);
+	}
+
+	/**
+	 * Recursively verify every JSON schema object is closed and every array declares items and maxItems.
+	 *
+	 * @param array<string, mixed> $schema Schema node.
+	 * @param string $path Context path for failure messages.
+	 * @return void
+	 */
+	private function assertSchemaClosedAndBounded(array $schema, string $path): void {
+		$type = is_array($schema['type'] ?? null) ? ($schema['type'][0] ?? null) : ($schema['type'] ?? null);
+
+		if ($type === 'object') {
+			$this->assertArrayHasKey('properties', $schema, $path . ' missing properties');
+			$this->assertFalse($schema['additionalProperties'] ?? null, $path . ' must set additionalProperties=false');
+			$props = is_array($schema['properties']) ? $schema['properties'] : (array) $schema['properties'];
+
+			foreach ((array) ($schema['required'] ?? []) as $req) {
+				$this->assertArrayHasKey((string) $req, $props, $path . ' required field missing from properties: ' . (string) $req);
+			}
+
+			foreach ($props as $k => $prop) {
+				if (is_array($prop)) {
+					$this->assertSchemaClosedAndBounded($prop, $path . '.' . $k);
+				}
+			}
+		}
+
+		if ($type === 'array') {
+			$this->assertArrayHasKey('items', $schema, $path . ' missing items');
+			$this->assertArrayHasKey('maxItems', $schema, $path . ' missing maxItems');
+			$this->assertIsInt($schema['maxItems'], $path . ' maxItems must be int');
+
+			if (is_array($schema['items'])) {
+				$this->assertSchemaClosedAndBounded($schema['items'], $path . '[]');
+			}
+		}
 	}
 }

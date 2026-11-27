@@ -61,6 +61,14 @@ final class McpAbilities {
 			return;
 		}
 
+		if (method_exists($registrar, 'registerCategory')) {
+			try {
+				$registrar->registerCategory('billing', 'Billing');
+			} catch (\LogicException) {
+				// Category may already have been registered by another plugin.
+			}
+		}
+
 		$registrar->register('billing-list-accounts', [
 			'label'        => 'List billing accounts',
 			'description'  => 'Return configured billing accounts (codes, names, currencies, connector types, statuses) without secrets or webhook URLs.',

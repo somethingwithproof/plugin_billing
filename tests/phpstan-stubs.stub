@@ -1,0 +1,17 @@
+<?php
+/*
+ * SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ *
+ * This file is part of plugin_billing, a plugin for Cacti.
+ * https://github.com/somethingwithproof/plugin_billing
+ */
+
+/**
+ * PHPStan stubs for Cacti script-server globals and optional runtime symbols.
+ */
+
+/**
+ * @var bool|null
+ */
+$called_by_script_server = null;

@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Polish <https://translate.cacti.net/projects/cacti/core/pl/>\n"
+"Language: pl-PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Weryfikacja CSRF nie powiodła się. Odśwież stronę i spróbuj ponownie."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Zapisano konto rozliczeniowe."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Zapisano konfigurację plugin_billing."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Nie można zapisać konfiguracji plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Nieobsługiwana akcja administratora."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Konta rozliczeniowe, umowy, taryfy i łączniki ERP (Administrator)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Zweryfikowano integralność SHA-256 zestawienia „%s”."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Weryfikacja zestawienia „%s” nie powiodła się: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Podaj prawidłowe daty rozpoczęcia i zakończenia w strefie UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Próbna taryfikacja dla %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Nie znaleziono zestawienia."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Nieobsługiwana akcja operatora."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Audyt zestawień rozliczeniowych, weryfikacja dowodów i eksport (Operator)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Zużycie rozliczeniowe i prognozy przekroczeń pasma w trakcie okresu"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Podgląd rozliczeń"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Operator rozliczeń"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Administrator rozliczeń"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Zużycie i prognozy rozliczeniowe"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Zestawienia rozliczeniowe i audyt"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Konta rozliczeniowe i taryfy"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Domyślne ustawienia taryfikacji i 95. percentyla"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Domyślny percentyl"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Domyślny N-ty percentyl stosowany dla nowych umów z pasmem zmiennym (od 50.0 do 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Domyślne zaokrąglanie liczby odrzucanych próbek"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Tryb zaokrąglania liczby szczytowych przedziałów odrzucanych podczas obliczania N-tego percentyla."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "W dół"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "W górę"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Do najbliższej"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Domyślna polityka brakujących próbek"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Sposób traktowania brakujących 5-minutowych przedziałów podczas taryfikacji."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Wyklucz luki"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Wypełnij brakujące przedziały zerami"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Przenieś poprzednią próbkę"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Domyślna waluta ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Trzyliterowy kod waluty ISO 4217 pisany wielkimi literami dla nowych kont i umów."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Mnożnik limitu skoków licznika"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Maksymalna wielokrotność prędkości portu interfejsu w bps przed obcięciem skoków licznika."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Bezpieczeństwo, webhooki ERP i retencja danych"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Limit czasu wychodzących webhooków (sekundy)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Ograniczony limit czasu HTTPS dla dostarczania danych przez łączniki rozliczeniowe ERP (od 1 do 60 s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Maksymalny rozmiar odpowiedzi webhooka (bajty)"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Górny limit liczby bajtów odczytywanych z odpowiedzi webhooków ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Ścieżka zewnętrznego pliku klucza AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Bezwzględna ścieżka w systemie plików do zewnętrznego 256-bitowego pliku klucza chroniącego sekrety łączników ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Próg ostrzegawczy budżetu szczytowego (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Procent wykorzystanych miesięcznych przedziałów szczytowych przed wygenerowaniem prognozy ostrzegawczej."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Próg krytyczny budżetu szczytowego (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Procent wykorzystanych miesięcznych przedziałów szczytowych przed wygenerowaniem prognozy krytycznej."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Zachowaj tabele rejestru rozliczeń przy odinstalowaniu"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Zachowaj tabele plugin_billing_* (w tym niezmienne próbki i zestawienia) podczas odinstalowywania."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Wtyczka Rozliczenia wymaga PHP %s lub nowszego. Ten serwer używa PHP %s, więc wtyczka nie została zainstalowana ani włączona."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Narzędzia"
+
+#: setup.php
+msgid "Billing"
+msgstr "Rozliczenia"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Rozliczanie tranzytu z pasmem zmiennym i zużycia"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Wtyczka Rozliczenia nie jest włączona."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Wtyczka Rozliczenia wymaga PHP %s lub nowszego."

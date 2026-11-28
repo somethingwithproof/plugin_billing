@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Turkish <https://translate.cacti.net/projects/cacti/core/tr/>\n"
+"Language: tr-TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF doğrulaması başarısız oldu. Sayfayı yeniden yükleyip tekrar deneyin."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Faturalandırma hesabı kaydedildi."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "plugin_billing yapılandırması kaydedildi."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "plugin_billing yapılandırması kaydedilemedi."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Desteklenmeyen yönetici işlemi."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Faturalandırma Hesapları, Sözleşmeler, Tarifeler ve ERP Bağlayıcıları (Yönetici)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "\"%s\" hesap özetinin SHA-256 bütünlüğü doğrulandı."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "\"%s\" hesap özetinin doğrulaması başarısız oldu: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Geçerli UTC başlangıç ve bitiş tarihleri girin."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "%s için deneme ücretlendirmesi: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Hesap özeti bulunamadı."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Desteklenmeyen operatör işlemi."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Faturalandırma Hesap Özeti Denetimi, Kanıt Doğrulama ve Dışa Aktarmalar (Operatör)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Faturalandırma Kullanımı ve Dönem İçi Pik Kullanım Tahminleri"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Faturalandırma Görüntüleme"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Faturalandırma Operatörü"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Faturalandırma Yöneticisi"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Faturalandırma Kullanımı ve Tahminler"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Faturalandırma Hesap Özetleri ve Denetim"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Faturalandırma Hesapları ve Tarifeler"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Ücretlendirme ve 95. Yüzdelik Dilim Varsayılanları"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Varsayılan Yüzdelik Dilim"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Yeni esnek kapasiteli sözleşmelere uygulanan varsayılan N. yüzdelik dilim (50.0 ile 100.0 arası)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Varsayılan Düşürülen Aralık Yuvarlaması"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "N. yüzdelik dilim hesaplanırken dışarıda bırakılan tepe aralıkları için yuvarlama modu."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Aşağı Yuvarla"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Yukarı Yuvarla"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "En Yakına Yuvarla"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Varsayılan Eksik Örnek İlkesi"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Ücretlendirme sırasında eksik 5 dakikalık aralıkların nasıl ele alınacağı."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Boşlukları hariç tut"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Eksik dilimleri sıfırla doldur"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Önceki örneği ileri taşı"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Varsayılan ISO 4217 Para Birimi"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Yeni hesaplar ve sözleşmeler için üç büyük harfli ISO 4217 para birimi kodu."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Sayaç Sıçrama Üst Sınır Çarpanı"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Sayaç sıçramaları kırpılmadan önce arayüz bağlantı noktası hızının en fazla bps katı."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Güvenlik, ERP Web Kancaları ve Saklama"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Giden Web Kancası Zaman Aşımı (saniye)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "ERP faturalandırma bağlayıcısı teslimatları için sınırlı HTTPS zaman aşımı (1 ile 60 sn arası)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "En Fazla Web Kancası Yanıt Baytı"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "ERP web kancası yanıtlarından okunan baytlar için üst sınır."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "AES-256-GCM Harici Anahtar Dosyası Yolu"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "ERP bağlayıcısı gizli bilgilerini koruyan harici 256 bitlik anahtar dosyasının mutlak dosya sistemi yolu."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Pik Kullanım Bütçesi Uyarı Eşiği (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Uyarı tahmini oluşturulmadan önce tüketilen aylık pik kullanım dilimi yüzdesi."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Pik Kullanım Bütçesi Kritik Eşiği (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Kritik tahmin oluşturulmadan önce tüketilen aylık pik kullanım dilimi yüzdesi."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Kaldırırken Hesap Defteri Tablolarını Koru"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Kaldırma sırasında plugin_billing_* tablolarını (değiştirilemez örnekler ve hesap özetleri dahil) koru."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Faturalandırma eklentisi PHP %s veya sonraki bir sürümü gerektirir. Bu sunucuda PHP %s çalıştığı için eklenti kurulmadı veya etkinleştirilmedi."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Araçlar"
+
+#: setup.php
+msgid "Billing"
+msgstr "Faturalandırma"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Esnek Kapasiteli Transit ve Kullanım Faturalandırması"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Faturalandırma eklentisi etkin değil."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Faturalandırma eklentisi PHP %s veya sonraki bir sürümü gerektirir."

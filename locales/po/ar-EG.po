@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Arabic (Egypt) <developers@cacti.net>\n"
+"Language: ar_EG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "فشل التحقق من رمز CSRF. أعد تحميل الصفحة وحاول مرة أخرى."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "تم حفظ حساب الفوترة."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "تم حفظ تكوين plugin_billing."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "تعذّر حفظ تكوين plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "إجراء مسؤول غير مدعوم."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "حسابات الفوترة والعقود والتعريفات وموصّلات ERP (المسؤول)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "تم التحقق من سلامة SHA-256 لكشف الحساب \"%s\"."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "فشل التحقق من كشف الحساب \"%s\": %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "يرجى إدخال تاريخي بدء وانتهاء صالحين بتوقيت UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "التسعير التجريبي لـ %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "لم يتم العثور على كشف الحساب."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "إجراء مشغّل غير مدعوم."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "تدقيق كشوف الفوترة والتحقق من الإثباتات والتصدير (المشغّل)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "استخدام الفوترة وتوقعات التجاوز في منتصف الدورة"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "عرض الفوترة"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "مشغّل الفوترة"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "مسؤول الفوترة"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "استخدام الفوترة والتوقعات"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "كشوف الفوترة والتدقيق"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "حسابات الفوترة والتعريفات"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "الإعدادات الافتراضية للتسعير والمئيني 95"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "المئيني الافتراضي"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "المئيني الافتراضي المُطبّق على العقود الجديدة القابلة للتجاوز (من 50.0 إلى 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "تقريب عدد الفترات المستبعدة الافتراضي"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "وضع التقريب لفترات الذروة المستبعدة عند حساب المئيني."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "التقريب للأدنى"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "التقريب للأعلى"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "الأقرب"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "سياسة العينات المفقودة الافتراضية"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "كيفية التعامل مع الفترات المفقودة ذات الـ 5 دقائق أثناء التسعير."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "استبعاد الفجوات"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "ملء الفترات المفقودة بأصفار"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "ترحيل العينة السابقة"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "عملة ISO 4217 الافتراضية"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "رمز عملة ISO 4217 المكون من ثلاثة أحرف كبيرة للحسابات والعقود الجديدة."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "مضاعف حد طفرات العداد"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "الحد الأقصى لمضاعف سرعة منفذ الواجهة بوحدة bps قبل تقييد طفرات العداد."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "الأمان وروابط Webhook لأنظمة ERP والاحتفاظ بالبيانات"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "مهلة Webhook الصادر (بالثواني)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "مهلة HTTPS المحدودة لتسليمات موصّل فوترة ERP (من 1 إلى 60 ثانية)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "الحد الأقصى لبايتات استجابة Webhook"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "الحد الأعلى للبايتات المقروءة من استجابات Webhook الخاصة بنظام ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "مسار ملف المفتاح الخارجي AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "المسار المطلق في نظام الملفات لملف المفتاح الخارجي بطول 256 بت الذي يحمي أسرار موصّل ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "حد التحذير لرصيد التجاوز (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "النسبة المئوية لفترات التجاوز الشهرية المستهلكة قبل إصدار توقع تحذيري."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "الحد الحرج لرصيد التجاوز (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "النسبة المئوية لفترات التجاوز الشهرية المستهلكة قبل إصدار توقع حرج."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "الاحتفاظ بجداول السجل المحاسبي عند إلغاء التثبيت"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "الاحتفاظ بجداول plugin_billing_* (بما في ذلك العينات وكشوف الحساب غير القابلة للتعديل) عند إلغاء التثبيت."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "تتطلب إضافة الفوترة إصدار PHP %s أو أحدث. يعمل هذا الخادم بإصدار PHP %s، لذلك لم يتم تثبيت الإضافة أو تفعيلها."
+
+#: setup.php
+msgid "Utilities"
+msgstr "الأدوات المساعدة"
+
+#: setup.php
+msgid "Billing"
+msgstr "الفوترة"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "فوترة الاستخدام والنقل القابل للتجاوز"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "إضافة الفوترة غير مفعّلة."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "تتطلب إضافة الفوترة إصدار PHP %s أو أحدث."

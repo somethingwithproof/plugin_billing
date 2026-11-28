@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Swahili <developers@cacti.net>\n"
+"Language: sw_KE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Uthibitishaji wa CSRF umeshindwa. Pakia upya ukurasa na ujaribu tena."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Akaunti ya utozaji imehifadhiwa."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Usanidi wa plugin_billing umehifadhiwa."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Imeshindwa kuhifadhi usanidi wa plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Kitendo cha msimamizi hakitumiki."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Akaunti za Utozaji, Mikataba, Viwango vya Tozo na Viunganishi vya ERP (Msimamizi)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Uadilifu wa SHA-256 wa taarifa ya utozaji \"%s\" umethibitishwa."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Uthibitishaji wa taarifa ya utozaji \"%s\" umeshindwa: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Toa tarehe sahihi za kuanza na kumaliza za UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Ukadiriaji wa majaribio kwa %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Taarifa ya utozaji haikupatikana."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Kitendo cha mwendeshaji hakitumiki."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Ukaguzi wa Taarifa za Utozaji, Uthibitishaji wa Ushahidi na Uhamishaji (Mwendeshaji)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Matumizi ya Utozaji na Utabiri wa Ziada Katikati ya Mzunguko"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Mwonekano wa Utozaji"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Mwendeshaji wa Utozaji"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Msimamizi wa Utozaji"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Matumizi ya Utozaji na Utabiri"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Taarifa za Utozaji na Ukaguzi"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Akaunti za Utozaji na Viwango vya Tozo"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Chaguo-msingi za Ukadiriaji wa Gharama na Asilimia ya 95"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Asilimia Chaguo-msingi"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Asilimia ya N chaguo-msingi inayotumika kwa mikataba mipya yenye uwezo wa ziada (50.0 hadi 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Ukadiriaji Chaguo-msingi wa Idadi Inayoondolewa"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Njia ya ukadiriaji wa vipindi vya kilele vinavyoondolewa wakati wa kukokotoa asilimia ya N."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Chini kabisa"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Juu kabisa"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Karibu zaidi"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Sera Chaguo-msingi ya Sampuli Zinazokosekana"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Jinsi vipindi vya dakika 5 vinavyokosekana vinavyoshughulikiwa wakati wa ukadiriaji wa gharama."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Ondoa mapengo"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Jaza sifuri kwenye nafasi zinazokosekana"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Endeleza sampuli iliyotangulia"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Sarafu Chaguo-msingi ya ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Msimbo wa sarafu wa ISO 4217 wenye herufi tatu kubwa kwa akaunti na mikataba mipya."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Kizidishi cha Kikomo cha Miinuko ya Ghafla ya Kihesabu"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Kizidishi cha juu cha bps cha kasi ya mlango wa kiolesura kabla ya kuzuia miinuko ya ghafla ya kihesabu."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Usalama, Webhook za ERP, na Uhifadhi"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Muda wa Mwisho wa Webhook Zinazotoka (sekunde)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Muda uliowekwa wa kikomo wa HTTPS kwa uwasilishaji wa viunganishi vya utozaji vya ERP (sekunde 1 hadi 60)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Idadi ya Juu ya Baiti za Jibu la Webhook"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Kikomo cha juu cha baiti zinazosomwa kutoka kwa majibu ya webhook ya ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Njia ya Faili ya Ufunguo ya Nje ya AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Njia kamili ya mfumo wa faili kuelekea faili ya ufunguo ya nje ya biti 256 inayolinda siri za kiunganishi cha ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Kizingiti cha Onyo cha Bajeti ya Ziada (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Asilimia ya nafasi za ziada za kila mwezi zilizotumika kabla ya kutoa utabiri wa onyo."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Kizingiti Muhimu cha Bajeti ya Ziada (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Asilimia ya nafasi za ziada za kila mwezi zilizotumika kabla ya kutoa utabiri muhimu."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Hifadhi Majedwali ya Leja Wakati wa Kuondoa"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Hifadhi majedwali ya plugin_billing_* (pamoja na sampuli na taarifa za utozaji zisizobadilika) wakati wa kuondoa programu-jalizi."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Programu-jalizi ya Utozaji inahitaji PHP %s au toleo jipya zaidi. Seva hii inatumia PHP %s, kwa hivyo programu-jalizi haikusakinishwa wala kuwezeshwa."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Zana"
+
+#: setup.php
+msgid "Billing"
+msgstr "Utozaji"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Utozaji wa Usafirishaji Wenye Ziada na Matumizi"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Programu-jalizi ya Utozaji haijawezeshwa."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Programu-jalizi ya Utozaji inahitaji PHP %s au toleo jipya zaidi."

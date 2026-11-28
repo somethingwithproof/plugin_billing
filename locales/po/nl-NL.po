@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Dutch <https://translate.cacti.net/projects/cacti/core/nl/>\n"
+"Language: nl-NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF-verificatie mislukt. Laad de pagina opnieuw en probeer het nogmaals."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Facturatieaccount opgeslagen."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Configuratie van plugin_billing opgeslagen."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Kan configuratie van plugin_billing niet opslaan."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Niet-ondersteunde beheerdersactie."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Facturatieaccounts, contracten, tarieven en ERP-koppelingen (beheerder)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "SHA-256-integriteit van afschrift \"%s\" geverifieerd."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Verificatie van afschrift \"%s\" mislukt: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Geef geldige begin- en einddatums in UTC op."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Proeftarifering voor %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Afschrift niet gevonden."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Niet-ondersteunde operatoractie."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Audit van factuurafschriften, bewijsverificatie en exports (operator)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Facturatieverbruik en tussentijdse piekprognoses"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Facturatieweergave"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Facturatie-operator"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Facturatiebeheer"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Facturatieverbruik en prognoses"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Factuurafschriften en audit"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Facturatieaccounts en tarieven"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Standaardinstellingen voor tarifering en 95e percentiel"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Standaard percentiel"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Standaard n-de percentiel toegepast op nieuwe contracten met piekcapaciteit (50.0 tot 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Standaard afronding van weggelaten piekmetingen"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Afrondingsmethode voor piekintervallen die worden weggelaten bij het berekenen van het n-de percentiel."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Naar beneden afronden"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Naar boven afronden"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Dichtstbijzijnde"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Standaardbeleid voor ontbrekende metingen"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Hoe ontbrekende 5-minutenintervallen worden behandeld tijdens tarifering."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Hiaten uitsluiten"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Ontbrekende tijdvakken vullen met nul"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Vorige meting overnemen"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Standaard ISO 4217-valuta"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "ISO 4217-valutacode van drie hoofdletters voor nieuwe accounts en contracten."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Vermenigvuldigingsfactor voor tellerpiekbeperking"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Maximaal bps-veelvoud van de interfacepoortsnelheid voordat tellerpieken worden afgetopt."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Beveiliging, ERP-webhooks en bewaartermijn"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Time-out voor uitgaande webhooks (seconden)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Begrensde HTTPS-time-out voor leveringen via de ERP-facturatiekoppeling (1 tot 60 s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Maximaal aantal bytes voor webhookantwoorden"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Bovengrens voor het aantal bytes dat wordt gelezen uit ERP-webhookantwoorden."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Pad naar extern AES-256-GCM-sleutelbestand"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Absoluut bestandssysteempad naar het externe 256-bits sleutelbestand dat geheimen van ERP-koppelingen beschermt."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Waarschuwingsdrempel voor piekbudget (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Percentage verbruikte maandelijkse piektijdvakken voordat een waarschuwingsprognose wordt gegenereerd."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Kritieke drempel voor piekbudget (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Percentage verbruikte maandelijkse piektijdvakken voordat een kritieke prognose wordt gegenereerd."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Grootboektabellen behouden bij verwijderen"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Behoud de tabellen van plugin_billing_* (inclusief onveranderlijke metingen en afschriften) bij het verwijderen."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "De Facturatie-plugin vereist PHP %s of hoger. Deze server draait op PHP %s, dus de plugin is niet geïnstalleerd of ingeschakeld."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Hulpmiddelen"
+
+#: setup.php
+msgid "Billing"
+msgstr "Facturatie"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Facturatie voor piektransit en verbruik"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "De Facturatie-plugin is niet ingeschakeld."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "De Facturatie-plugin vereist PHP %s of hoger."

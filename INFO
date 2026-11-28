@@ -17,7 +17,7 @@
 [info]
 name = billing
 version = 0.1.0
-longname = Burstable Transit & Usage Billing
+longname = "Burstable Transit & Usage Billing"
 author = "Thomas Vincent (somethingwithproof)"
 email = thomasvincent@gmail.com
 homepage = https://github.com/somethingwithproof/plugin_billing

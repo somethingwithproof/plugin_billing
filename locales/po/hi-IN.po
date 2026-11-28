@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Hindi <https://translate.cacti.net/projects/cacti/core/hi/>\n"
+"Language: hi-IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF सत्यापन विफल रहा। पृष्ठ को पुनः लोड करें और फिर से प्रयास करें।"
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "बिलिंग खाता सहेजा गया।"
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "plugin_billing कॉन्फ़िगरेशन सहेजा गया।"
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "plugin_billing कॉन्फ़िगरेशन सहेजने में असमर्थ।"
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "असमर्थित प्रशासक कार्रवाई।"
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "बिलिंग खाते, अनुबंध, टैरिफ और ERP कनेक्टर (प्रशासक)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "विवरण \"%s\" की SHA-256 अखंडता सत्यापित हो गई।"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "विवरण \"%s\" का सत्यापन विफल रहा: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "मान्य UTC प्रारंभ और समाप्ति तिथियाँ प्रदान करें।"
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "%s के लिए ड्राई-रन रेटिंग: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "विवरण नहीं मिला।"
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "असमर्थित ऑपरेटर कार्रवाई।"
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "बिलिंग विवरण ऑडिट, प्रमाण सत्यापन और निर्यात (ऑपरेटर)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "बिलिंग उपयोग और मध्य-चक्र बर्स्ट पूर्वानुमान"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "बिलिंग दृश्य"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "बिलिंग ऑपरेटर"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "बिलिंग प्रशासक"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "बिलिंग उपयोग और पूर्वानुमान"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "बिलिंग विवरण और ऑडिट"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "बिलिंग खाते और टैरिफ"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "रेटिंग और 95वें-पर्सेन्टाइल डिफ़ॉल्ट"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "डिफ़ॉल्ट पर्सेन्टाइल"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "नए बर्स्टेबल अनुबंधों पर लागू डिफ़ॉल्ट Nवाँ पर्सेन्टाइल (50.0 से 100.0)।"
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "डिफ़ॉल्ट ड्रॉप-काउंट पूर्णांकन"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Nवाँ पर्सेन्टाइल गणना करते समय छोड़े गए पीक अंतरालों के लिए पूर्णांकन मोड।"
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "निम्न पूर्णांक"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "उच्च पूर्णांक"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "निकटतम"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "डिफ़ॉल्ट अनुपस्थित-नमूना नीति"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "रेटिंग के दौरान अनुपस्थित 5-मिनट अंतरालों का प्रबंधन कैसे किया जाए।"
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "अंतराल बाहर रखें"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "अनुपस्थित स्लॉट शून्य से भरें"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "पिछला नमूना आगे बढ़ाएँ"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "डिफ़ॉल्ट ISO 4217 मुद्रा"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "नए खातों और अनुबंधों के लिए तीन-अक्षरों का बड़े अक्षरों वाला ISO 4217 मुद्रा कोड।"
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "काउंटर स्पाइक सीमा गुणक"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "काउंटर स्पाइक्स को सीमित करने से पहले इंटरफ़ेस पोर्ट गति का अधिकतम bps गुणज।"
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "सुरक्षा, ERP वेबहुक और प्रतिधारण"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "आउटबाउंड वेबहुक टाइमआउट (सेकंड)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "ERP बिलिंग कनेक्टर वितरण के लिए सीमित HTTPS टाइमआउट (1 से 60 सेकंड)।"
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "अधिकतम वेबहुक प्रतिक्रिया बाइट्स"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "ERP वेबहुक प्रतिक्रियाओं से पढ़े जाने वाले बाइट्स की ऊपरी सीमा।"
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "AES-256-GCM बाह्य कुंजी-फ़ाइल पथ"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "ERP कनेक्टर गोपनीय कुंजियों की सुरक्षा करने वाली बाह्य 256-बिट कुंजी-फ़ाइल का पूर्ण फ़ाइल-सिस्टम पथ।"
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "बर्स्ट बजट चेतावनी सीमा (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "चेतावनी पूर्वानुमान जारी करने से पहले उपयोग किए गए मासिक बर्स्ट स्लॉट का प्रतिशत।"
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "बर्स्ट बजट गंभीर सीमा (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "गंभीर पूर्वानुमान जारी करने से पहले उपयोग किए गए मासिक बर्स्ट स्लॉट का प्रतिशत।"
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "अनइंस्टॉल पर लेज़र तालिकाएँ सुरक्षित रखें"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "अनइंस्टॉल करते समय plugin_billing_* तालिकाओं (अपरिवर्तनीय नमूनों और विवरणों सहित) को सुरक्षित रखें।"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "बिलिंग प्लगइन के लिए PHP %s या उसके बाद का संस्करण आवश्यक है। यह सर्वर PHP %s चला रहा है, इसलिए प्लगइन को इंस्टॉल या सक्षम नहीं किया गया।"
+
+#: setup.php
+msgid "Utilities"
+msgstr "उपयोगिताएँ"
+
+#: setup.php
+msgid "Billing"
+msgstr "बिलिंग"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "बर्स्टेबल ट्रांज़िट और उपयोग बिलिंग"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "बिलिंग प्लगइन सक्षम नहीं है।"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "बिलिंग प्लगइन के लिए PHP %s या उसके बाद का संस्करण आवश्यक है।"

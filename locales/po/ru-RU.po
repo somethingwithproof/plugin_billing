@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Russian <https://translate.cacti.net/projects/cacti/core/ru/>\n"
+"Language: ru-RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Ошибка проверки CSRF. Перезагрузите страницу и повторите попытку."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Учетная запись биллинга сохранена."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Конфигурация plugin_billing сохранена."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Не удалось сохранить конфигурацию plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Неподдерживаемое действие администратора."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Учетные записи биллинга, договоры, тарифы и коннекторы ERP (администратор)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Целостность SHA-256 выписки «%s» подтверждена."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Ошибка проверки выписки «%s»: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Укажите корректные даты начала и окончания в UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Пробная тарификация для %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Выписка не найдена."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Неподдерживаемое действие оператора."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Аудит биллинговых выписок, проверка подлинности и экспорт (оператор)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Потребление по биллингу и прогнозы всплесков в середине периода"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Просмотр биллинга"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Оператор биллинга"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Администратор биллинга"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Потребление и прогнозы биллинга"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Выписки и аудит биллинга"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Учетные записи и тарифы биллинга"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Параметры тарификации и 95-го перцентиля по умолчанию"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Перцентиль по умолчанию"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "N-й перцентиль по умолчанию для новых договоров с возможностью превышения полосы (от 50.0 до 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Округление числа отбрасываемых интервалов по умолчанию"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Режим округления числа пиковых интервалов, отбрасываемых при расчете N-го перцентиля."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Вниз (к меньшему)"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Вверх (к большему)"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "К ближайшему"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Политика обработки пропущенных выборок по умолчанию"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Способ обработки отсутствующих 5-минутных интервалов при тарификации."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Исключать пропуски"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Заполнять пропущенные интервалы нулями"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Переносить предыдущую выборку"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Валюта ISO 4217 по умолчанию"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Трехбуквенный код валюты ISO 4217 в верхнем регистре для новых учетных записей и договоров."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Множитель ограничения всплесков счетчика"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Максимальная кратность скорости порта интерфейса в bps перед ограничением всплесков счетчика."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Безопасность, вебхуки ERP и хранение данных"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Тайм-аут исходящих вебхуков (секунды)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Ограниченный тайм-аут HTTPS для доставки данных коннекторами биллинга ERP (от 1 до 60 с)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Максимальный размер ответа вебхука (байты)"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Верхний предел числа байтов, считываемых из ответов вебхуков ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Путь к внешнему файлу ключа AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Абсолютный путь в файловой системе к внешнему 256-битному файлу ключа для защиты секретов коннекторов ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Порог предупреждения бюджета всплесков (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Доля использованных месячных интервалов всплеска в процентах для выдачи предупреждения в прогнозе."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Критический порог бюджета всплесков (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Доля использованных месячных интервалов всплеска в процентах для выдачи критического прогноза."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Сохранять таблицы учета при удалении"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Сохранять таблицы plugin_billing_* (включая неизменяемые выборки и выписки) при удалении плагина."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Для плагина биллинга требуется PHP %s или новее. На этом сервере работает PHP %s, поэтому плагин не был установлен или включен."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Утилиты"
+
+#: setup.php
+msgid "Billing"
+msgstr "Биллинг"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Биллинг транзитного трафика с превышением полосы и потребления"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Плагин биллинга не включен."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Для плагина биллинга требуется PHP %s или новее."

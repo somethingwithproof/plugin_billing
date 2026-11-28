@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: German <https://translate.cacti.net/projects/cacti/core/de/>\n"
+"Language: de-DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF-Überprüfung fehlgeschlagen. Laden Sie die Seite neu und versuchen Sie es erneut."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Abrechnungskonto gespeichert."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Konfiguration von plugin_billing gespeichert."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Konfiguration von plugin_billing konnte nicht gespeichert werden."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Nicht unterstützte Administratoraktion."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Abrechnungskonten, Verträge, Tarife & ERP-Konnektoren (Administrator)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "SHA-256-Integrität des Abrechnungsbelegs „%s“ bestätigt."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Überprüfung des Abrechnungsbelegs „%s“ fehlgeschlagen: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Geben Sie gültige Start- und Enddaten in UTC an."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Testlauf-Tarifierung für %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Abrechnungsbeleg nicht gefunden."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Nicht unterstützte Bedieneraktion."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Prüfung von Abrechnungsbelegen, Nachweisverifizierung & Exporte (Bediener)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Abrechnungsnutzung & Burst-Prognosen im laufenden Zyklus"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Abrechnungsansicht"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Abrechnungsbediener"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Abrechnungsadministrator"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Abrechnungsnutzung & Prognosen"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Abrechnungsbelege & Prüfung"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Abrechnungskonten & Tarife"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Standardwerte für Tarifierung & 95.-Perzentil"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Standard-Perzentil"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Standardmäßiges N-tes Perzentil für neue Verträge mit Burst-Modell (50.0 bis 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Standardrundung der verworfenen Spitzenintervalle"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Rundungsmodus für die bei der Berechnung des N-ten Perzentils verworfenen Spitzenintervalle."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Abrunden"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Aufrunden"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Nächster Wert"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Standardrichtlinie für fehlende Messwerte"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Wie fehlende 5-Minuten-Intervalle bei der Tarifierung behandelt werden."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Lücken ausschließen"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Fehlende Zeitfenster mit Null füllen"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Vorherigen Messwert fortschreiben"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Standardwährung nach ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Dreistelliger Währungscode nach ISO 4217 in Großbuchstaben für neue Konten und Verträge."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Begrenzungsfaktor für Zählerspitzen"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Maximales bps-Vielfaches der Schnittstellen-Portgeschwindigkeit, bevor Zählerspitzen gekappt werden."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Sicherheit, ERP-Webhooks und Aufbewahrung"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Zeitlimit für ausgehende Webhooks (Sekunden)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Begrenztes HTTPS-Zeitlimit für Zustellungen über ERP-Abrechnungskonnektoren (1 bis 60 s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Maximale Webhook-Antwortgröße (Bytes)"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Obergrenze für die aus ERP-Webhook-Antworten gelesenen Bytes."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Pfad zur externen AES-256-GCM-Schlüsseldatei"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Absoluter Dateisystempfad zur externen 256-Bit-Schlüsseldatei zum Schutz der Geheimnisse von ERP-Konnektoren."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Warnschwelle für Burst-Budget (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Prozentsatz der verbrauchten monatlichen Burst-Zeitfenster, ab dem eine Warnprognose ausgelöst wird."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Kritische Schwelle für Burst-Budget (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Prozentsatz der verbrauchten monatlichen Burst-Zeitfenster, ab dem eine kritische Prognose ausgelöst wird."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Buchungstabellen bei Deinstallation behalten"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Die Tabellen plugin_billing_* (einschließlich unveränderlicher Messwerte und Abrechnungsbelege) bei der Deinstallation beibehalten."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Das Abrechnungs-Plugin erfordert PHP %s oder höher. Auf diesem Server läuft PHP %s, daher wurde das Plugin weder installiert noch aktiviert."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Dienstprogramme"
+
+#: setup.php
+msgid "Billing"
+msgstr "Abrechnung"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Transit- und Nutzungsabrechnung mit Burst-Modell"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Das Abrechnungs-Plugin ist nicht aktiviert."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Das Abrechnungs-Plugin erfordert PHP %s oder höher."

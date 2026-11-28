@@ -1,0 +1,110 @@
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This file is part of plugin_billing, a plugin for Cacti.
+# https://github.com/somethingwithproof/plugin_billing
+#
+# Static Drupal-style Config vs. State schema for plugin_billing.
+# Config keys and billing catalog definitions (accounts, contracts, tariffs,
+# circuits) are declarative, validated, and eligible for CasC export/apply.
+# State tables (immutable 5-minute sample ledger, finalized statements, and
+# webhook export audit logs) are never exported or overwritten by CasC.
+
+apiVersion: cacti.net/v1alpha1
+kind: PluginConfigSchema
+metadata:
+  plugin: billing
+  schemaVersion: '1.0'
+config:
+  export: true
+  fields:
+    billing_default_percentile:
+      type: number
+      min: 50.0
+      max: 100.0
+      default: 95.0
+      description: Default Nth-percentile used when creating new burstable contracts.
+    billing_default_drop_rounding:
+      type: enum
+      values:
+        - ceil
+        - floor
+        - nearest
+      default: floor
+      description: Rounding strategy for the number of peak intervals excluded from the Nth percentile.
+    billing_default_gap_policy:
+      type: enum
+      values:
+        - exclude
+        - zero_fill
+        - carry_forward
+      default: exclude
+      description: Policy applied when expected 5-minute polling buckets are missing.
+    billing_default_currency:
+      type: string
+      pattern: '^[A-Z]{3}$'
+      default: USD
+      description: ISO 4217 uppercase currency code applied to new billing accounts and contracts.
+    billing_spike_multiplier:
+      type: number
+      min: 1.0
+      max: 5.0
+      default: 1.5
+      description: Sanity ceiling multiplier applied against port speed during counter delta ingestion.
+    billing_outbound_timeout:
+      type: integer
+      min: 1
+      max: 60
+      default: 10
+      description: Outbound HTTPS webhook timeout in seconds for ERP billing bridges.
+    billing_max_response_bytes:
+      type: integer
+      min: 1024
+      max: 1048576
+      default: 65536
+      description: Maximum HTTP response body size accepted from ERP webhook endpoints.
+    billing_secret_keyfile:
+      type: string
+      pattern: '^$|^/[A-Za-z0-9._/-]{1,240}$'
+      default: ''
+      secretRef: true
+      description: Absolute path to external 256-bit keyfile used by SecretVault for AES-256-GCM encryption; key material is never exported.
+    billing_burst_warning_pct:
+      type: integer
+      min: 10
+      max: 99
+      default: 70
+      description: Percentage of the monthly burst slot budget that raises a warning forecast status.
+    billing_burst_critical_pct:
+      type: integer
+      min: 20
+      max: 100
+      default: 90
+      description: Percentage of the monthly burst slot budget that raises a critical forecast status.
+    billing_uninstall_keep_tables:
+      type: boolean
+      default: true
+      description: Preserve plugin_billing_* tables (including immutable ledger and finalized statements) on uninstall.
+  catalogEntities:
+    - plugin_billing_account
+    - plugin_billing_contract
+    - plugin_billing_circuit
+state:
+  export: false
+  immutable: true
+  tables:
+    plugin_billing_sample:
+      description: Append-only 5-minute billing sample ledger (network bps and generic resource micro-units). Never overwritten by CasC.
+    plugin_billing_statement:
+      description: Immutable finalized billing statements with tariff snapshots and SHA-256 tamper-evident proof digests. Never overwritten by CasC.
+    plugin_billing_export_log:
+      description: Webhook delivery audit trail and response digests for ERP billing bridges.
+  ephemeralMetrics:
+    - accounts_active
+    - contracts_active
+    - circuits_total
+    - statements_finalized
+    - accounts_over_commit
+    - burst_warning_count
+    - exports_failed
+    - samples_24h

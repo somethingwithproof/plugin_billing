@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Amharic <developers@cacti.net>\n"
+"Language: am_ET\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "የ CSRF ማረጋገጫ አልተሳካም። ገጹን እንደገና ይጫኑና ይሞክሩ።"
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "የክፍያ ሂሳብ ተቀምጧል።"
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "የ plugin_billing ውቅር ተቀምጧል።"
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "የ plugin_billing ውቅር ማስቀመጥ አልተቻለም።"
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "የማይደገፍ የአስተዳዳሪ እርምጃ።"
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "የክፍያ ሂሳቦች፣ ውሎች፣ ታሪፎች እና የ ERP ማገናኛዎች (አስተዳዳሪ)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "የመግለጫ \"%s\" የ SHA-256 ታማኝነት ተረጋግጧል።"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "የመግለጫ \"%s\" ማረጋገጫ አልተሳካም: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "ትክክለኛ የ UTC መጀመሪያ እና መጨረሻ ቀናትን ያቅርቡ።"
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "ለ %s የሙከራ ዋጋ ስሌት: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "መግለጫው አልተገኘም።"
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "የማይደገፍ የኦፕሬተር እርምጃ።"
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "የክፍያ መግለጫ ኦዲት፣ የማስረጃ ማረጋገጫ እና ወደ ውጭ መላኪያዎች (ኦፕሬተር)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "የክፍያ አጠቃቀም እና የመካከለኛ ዑደት የፍጥነት ጭማሪ ትንበያዎች"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "የክፍያ እይታ"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "የክፍያ ኦፕሬተር"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "የክፍያ አስተዳዳሪ"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "የክፍያ አጠቃቀም እና ትንበያዎች"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "የክፍያ መግለጫዎች እና ኦዲት"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "የክፍያ ሂሳቦች እና ታሪፎች"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "የዋጋ ስሌት እና የ95ኛ ፐርሰንታይል ነባሪዎች"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "ነባሪ ፐርሰንታይል"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "ለአዳዲስ የፍጥነት ጭማሪ ውሎች የሚተገበር ነባሪ Nኛ ፐርሰንታይል (ከ50.0 እስከ 100.0)።"
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "ነባሪ የተጣሉ ክፍተቶች ማጠጋጊያ"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Nኛውን ፐርሰንታይል ሲያሰሉ ለሚጣሉ ከፍተኛ ክፍተቶች የማጠጋጊያ ሁነታ።"
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "ወደ ታች አጠጋጋ"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "ወደ ላይ አጠጋጋ"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "ወደ ቅርቡ አጠጋጋ"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "ነባሪ የጎደለ ናሙና መመሪያ"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "በዋጋ ስሌት ጊዜ የጎደሉ የ5-ደቂቃ ክፍተቶች እንዴት እንደሚስተናገዱ።"
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "ክፍተቶችን አግልል"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "የጎደሉ ቦታዎችን በዜሮ ሙላ"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "የቀድሞውን ናሙና ወደፊት አስተላልፍ"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "ነባሪ የ ISO 4217 ምንዛሬ"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "ለአዳዲስ ሂሳቦች እና ውሎች ባለ ሶስት ፊደል አቢይ ፊደል ISO 4217 የምንዛሬ ኮድ።"
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "የቆጣሪ ድንገተኛ ጭማሪ ገደብ አባዥ"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "የቆጣሪ ድንገተኛ ጭማሪዎችን ከመገደብ በፊት የበይነገጽ ወደብ ፍጥነት ከፍተኛ የ bps ብዜት።"
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "ደህንነት፣ የ ERP ዌብሁኮች እና ማቆያ"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "የውጪ ዌብሁክ የጊዜ ማብቂያ (ሰከንዶች)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "ለ ERP የክፍያ ማገናኛ አቅርቦቶች የተገደበ የ HTTPS ጊዜ ማብቂያ (ከ1 እስከ 60 ሰከንድ)።"
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "ከፍተኛ የዌብሁክ ምላሽ ባይቶች"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "ከ ERP ዌብሁክ ምላሾች የሚነበቡ ባይቶች ከፍተኛ ገደብ።"
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "የ AES-256-GCM ውጫዊ ቁልፍ ፋይል መንገድ"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "የ ERP ማገናኛ ሚስጥሮችን ወደሚጠብቀው ውጫዊ ባለ 256-ቢት ቁልፍ ፋይል ፍጹም የፋይል ስርዓት መንገድ።"
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "የፍጥነት ጭማሪ በጀት ማስጠንቀቂያ ገደብ (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "የማስጠንቀቂያ ትንበያ ከመውጣቱ በፊት ጥቅም ላይ የዋሉ ወርሃዊ የፍጥነት ጭማሪ ቦታዎች መቶኛ።"
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "የፍጥነት ጭማሪ በጀት ወሳኝ ገደብ (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "ወሳኝ ትንበያ ከመውጣቱ በፊት ጥቅም ላይ የዋሉ ወርሃዊ የፍጥነት ጭማሪ ቦታዎች መቶኛ።"
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "ሲራገፍ የሂሳብ መዝገብ ሰንጠረዦችን አቆይ"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "ሲራገፍ plugin_billing_* ሰንጠረዦችን (የማይለወጡ ናሙናዎችን እና መግለጫዎችን ጨምሮ) አቆይ።"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "የክፍያ ተሰኪው PHP %s ወይም ከዚያ በላይ ይፈልጋል። ይህ አገልጋይ PHP %s እያስኬደ ስለሆነ ተሰኪው አልተጫነም ወይም አልነቃም።"
+
+#: setup.php
+msgid "Utilities"
+msgstr "መገልገያዎች"
+
+#: setup.php
+msgid "Billing"
+msgstr "ክፍያ"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "የፍጥነት ጭማሪ ትራንዚት እና አጠቃቀም ክፍያ"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "የክፍያ ተሰኪው አልነቃም።"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "የክፍያ ተሰኪው PHP %s ወይም ከዚያ በላይ ይፈልጋል።"

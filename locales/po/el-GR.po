@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Greek <https://translate.cacti.net/projects/cacti/core/el/>\n"
+"Language: el-GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Η επαλήθευση CSRF απέτυχε. Επαναφορτώστε τη σελίδα και προσπαθήστε ξανά."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Ο λογαριασμός τιμολόγησης αποθηκεύτηκε."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Η διαμόρφωση του plugin_billing αποθηκεύτηκε."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Αδυναμία αποθήκευσης της διαμόρφωσης του plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Μη υποστηριζόμενη ενέργεια διαχειριστή."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Λογαριασμοί τιμολόγησης, συμβάσεις, τιμολόγια και συνδετήρες ERP (Διαχειριστής)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Η ακεραιότητα SHA-256 της κατάστασης χρέωσης «%s» επαληθεύτηκε."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Η επαλήθευση της κατάστασης χρέωσης «%s» απέτυχε: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Καταχωρίστε έγκυρες ημερομηνίες έναρξης και λήξης σε UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Δοκιμαστική κοστολόγηση για %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Η κατάσταση χρέωσης δεν βρέθηκε."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Μη υποστηριζόμενη ενέργεια χειριστή."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Έλεγχος καταστάσεων χρέωσης, επαλήθευση αποδείξεων και εξαγωγές (Χειριστής)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Χρήση τιμολόγησης και ενδιάμεσες προβλέψεις αιχμών κύκλου"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Προβολή τιμολόγησης"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Χειριστής τιμολόγησης"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Διαχειριστής τιμολόγησης"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Χρήση τιμολόγησης και προβλέψεις"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Καταστάσεις χρέωσης και έλεγχος"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Λογαριασμοί τιμολόγησης και τιμολόγια"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Προεπιλογές κοστολόγησης και 95ου εκατοστημορίου"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Προεπιλεγμένο εκατοστημόριο"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Προεπιλεγμένο Ν-οστό εκατοστημόριο που εφαρμόζεται σε νέες συμβάσεις με δυνατότητα αιχμής (50.0 έως 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Προεπιλεγμένη στρογγυλοποίηση απορριπτόμενων διαστημάτων"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Τρόπος στρογγυλοποίησης για τα διαστήματα αιχμής που απορρίπτονται κατά τον υπολογισμό του Ν-οστού εκατοστημορίου."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Προς τα κάτω"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Προς τα πάνω"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Πλησιέστερο"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Προεπιλεγμένη πολιτική ελλειπόντων δειγμάτων"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Τρόπος διαχείρισης των ελλειπόντων διαστημάτων 5 λεπτών κατά την κοστολόγηση."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Εξαίρεση κενών"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Συμπλήρωση ελλειπόντων χρονοθυρίδων με μηδέν"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Μεταφορά προηγούμενου δείγματος"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Προεπιλεγμένο νόμισμα ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Κωδικός νομίσματος ISO 4217 τριών κεφαλαίων γραμμάτων για νέους λογαριασμούς και συμβάσεις."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Πολλαπλασιαστής ορίου αιχμών μετρητή"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Μέγιστο πολλαπλάσιο σε bps της ταχύτητας θύρας διεπαφής πριν από τον περιορισμό αιχμών μετρητή."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Ασφάλεια, webhooks ERP και διατήρηση δεδομένων"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Χρονικό όριο εξερχόμενου webhook (δευτερόλεπτα)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Περιορισμένο χρονικό όριο HTTPS για παραδόσεις συνδετήρα τιμολόγησης ERP (1 έως 60 δευτ.)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Μέγιστα byte απόκρισης webhook"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Ανώτατο όριο σε byte που διαβάζονται από αποκρίσεις webhook του ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Διαδρομή εξωτερικού αρχείου κλειδιού AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Απόλυτη διαδρομή συστήματος αρχείων προς το εξωτερικό αρχείο κλειδιού 256 bit που προστατεύει τα μυστικά του συνδετήρα ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Όριο προειδοποίησης προϋπολογισμού αιχμών (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Ποσοστό μηνιαίων χρονοθυρίδων αιχμής που καταναλώνονται πριν εκδοθεί πρόβλεψη προειδοποίησης."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Κρίσιμο όριο προϋπολογισμού αιχμών (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Ποσοστό μηνιαίων χρονοθυρίδων αιχμής που καταναλώνονται πριν εκδοθεί κρίσιμη πρόβλεψη."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Διατήρηση πινάκων καθολικού κατά την απεγκατάσταση"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Διατήρηση των πινάκων plugin_billing_* (συμπεριλαμβανομένων αμετάβλητων δειγμάτων και καταστάσεων χρέωσης) κατά την απεγκατάσταση."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Το πρόσθετο Τιμολόγησης απαιτεί PHP %s ή νεότερη έκδοση. Αυτός ο διακομιστής εκτελεί PHP %s, επομένως το πρόσθετο δεν εγκαταστάθηκε ούτε ενεργοποιήθηκε."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Βοηθητικά εργαλεία"
+
+#: setup.php
+msgid "Billing"
+msgstr "Τιμολόγηση"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Τιμολόγηση χρήσης και διαμετακόμισης με δυνατότητα αιχμής"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Το πρόσθετο Τιμολόγησης δεν είναι ενεργοποιημένο."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Το πρόσθετο Τιμολόγησης απαιτεί PHP %s ή νεότερη έκδοση."

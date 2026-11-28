@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Zulu <developers@cacti.net>\n"
+"Language: zu_ZA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Ukuqinisekiswa kwe-CSRF kuhlulekile. Layisha kabusha ikhasi bese uzama futhi."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "I-akhawunti yokukhokhisa ilondoloziwe."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Ukumiswa kwe-plugin_billing kulondoloziwe."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Ayikwazi ukulondoloza ukumiswa kwe-plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Isenzo somlawuli esingasekelwe."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Ama-akhawunti Okukhokhisa, Izinkontileka, Amanani Nezixhumi ze-ERP (Umlawuli)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Ubuqotho be-SHA-256 besitatimende \"%s\" buqinisekisiwe."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Ukuqinisekiswa kwesitatimende \"%s\" kuhlulekile: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Nikeza izinsuku zokuqala nezokuphela ze-UTC ezivumelekile."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Ukulinganisa kokuhlola kwe-%s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Isitatimende asitholakalanga."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Isenzo somqhubi esingasekelwe."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Ukuhlolwa Kwezitatimende Zokukhokhisa, Ukuqinisekiswa Kobufakazi Nokukhipha (Umqhubi)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Ukusetshenziswa Kokukhokhisa Nezibikezelo Zokuqhuma Komthwalo Phakathi Nomjikelezo"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Ukubuka Ukukhokhisa"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Umqhubi Wokukhokhisa"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Umlawuli Wokukhokhisa"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Ukusetshenziswa Kokukhokhisa Nezibikezelo"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Izitatimende Zokukhokhisa Nokuhlola"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Ama-akhawunti Okukhokhisa Namanani"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Okuzenzakalelayo Kokulinganisa Nephesentayili Lama-95"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Iphesentayili Elizenzakalelayo"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Iphesentayili elizenzakalelayo le-N elisetshenziswa ezinkontilekeni ezintsha ezinomthwalo oqhuma ngokweqile (50.0 kuya ku-100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Ukulinganisa Inombolo Okuzenzakalelayo Kwesibalo Esishiyiwe"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Indlela yokulinganisa inombolo yezikhawu eziphakeme ezishiyiwe lapho kubalwa iphesentayili le-N."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Phansi"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Phezulu"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Eseduze kakhulu"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Inqubomgomo Ezenzakalelayo Yamasampula Angekho"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Indlela izikhawu ezingekho zemizuzu emi-5 eziphathwa ngayo ngesikhathi sokulinganisa."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Khipha izikhala"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Gcwalisa ngoziro izikhala ezingekho"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Qhubekisela phambili isampula edlule"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Imali Ezenzakalelayo ye-ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Ikhodi yemali ye-ISO 4217 yezinhlamvu ezintathu ezinkulu yama-akhawunti nezinkontileka ezintsha."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Isiphindaphindi Somkhawulo Wokukhuphuka Okuzumayo Kwesibali"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Isiphindaphindi esiphezulu se-bps sejubane lembobo yokuxhumana ngaphambi kokunqanda ukukhuphuka okuzumayo kwesibali."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Ukuphepha, ama-Webhook e-ERP, Nokugcinwa Kwedatha"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Isikhathi Sokuphela kwe-Webhook Ephumayo (imizuzwana)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Isikhathi esinomkhawulo sokuphela kwe-HTTPS sokulethwa kwezixhumi zokukhokhisa ze-ERP (1 kuya ku-60s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Amabhayithi Aphezulu Empendulo ye-Webhook"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Umkhawulo ophezulu wamabhayithi afundwa ezimpendulweni ze-webhook ye-ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Indlela Yefayela Lokhiye Wangaphandle we-AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Indlela ephelele yesistimu yamafayela eya kufayela lokhiye wangaphandle we-256-bit ovikela izimfihlo zezixhumi ze-ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Umkhawulo Wesexwayiso Wesabelomali Sokuqhuma Komthwalo (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Iphesenti lezikhala zokuqhuma komthwalo zanyanga zonke ezisetshenzisiwe ngaphambi kokukhipha isibikezelo sesexwayiso."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Umkhawulo Obucayi Wesabelomali Sokuqhuma Komthwalo (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Iphesenti lezikhala zokuqhuma komthwalo zanyanga zonke ezisetshenzisiwe ngaphambi kokukhipha isibikezelo esibucayi."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Gcina Amathebula Erekhodi Lapho Ukhipha"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Gcina amathebula athi plugin_billing_* (kuhlanganise namasampula nezitatimende ezingaguquki) lapho ukhipha isengezo."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Isengezo sokukhokhisa sidinga i-PHP %s noma eyakamuva. Le seva isebenzisa i-PHP %s, ngakho-ke isengezo asifakwanga futhi asinikwanga amandla."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Izinsiza"
+
+#: setup.php
+msgid "Billing"
+msgstr "Ukukhokhisa"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Ukukhokhisa Kwezokudluliswa Okunomthwalo Oqhuma Ngokweqile Nokusetshenziswa"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Isengezo sokukhokhisa asinikwanga amandla."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Isengezo sokukhokhisa sidinga i-PHP %s noma eyakamuva."

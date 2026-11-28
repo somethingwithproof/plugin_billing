@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Malagasy <developers@cacti.net>\n"
+"Language: mg_MG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Tsy nahomby ny fanamarinana CSRF. Avereno sokafana ny pejy ary andramo indray."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Voatahiry ny kaonty faktiora."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Voatahiry ny fikirakirana plugin_billing."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Tsy afaka nitahiry ny fikirakirana plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Hetsiky ny mpitantana tsy tohanana."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Kaonty Faktiora, Fifanarahana, Sarany ary Mpampifandray ERP (Mpitantana)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Voamarina ny fahamarinan'ny SHA-256 an'ny tatitra faktiora \"%s\"."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Tsy nahomby ny fanamarinana ny tatitra faktiora \"%s\": %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Manomeza daty fanombohana sy famaranana UTC manan-kery."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Fikajiana sarany andrana ho an'ny %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Tsy hita ny tatitra faktiora."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Hetsiky ny mpanatanteraka tsy tohanana."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Fanaraha-maso Tatitra Faktiora, Fanamarinana Porofo ary Fanondranana (Mpanatanteraka)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Fampiasana Faktiora sy Vinavina Fihoarana Antsasaky ny Tsingerina"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Fijerena Faktiora"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Mpanatanteraka Faktiora"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Mpitantana Faktiora"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Fampiasana Faktiora sy Vinavina"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Tatitra Faktiora sy Fanaraha-maso"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Kaonty Faktiora sy Sarany"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Fikajiana Sarany sy Sanda Mahazatra Persentila faha-95"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Persentila Mahazatra"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Persentila faha-N mahazatra ampiharina amin'ny fifanarahana misy fihoarana vaovao (50.0 hatramin'ny 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Fanitsiana Isa Mahazatra ho an'ny Isan'ny Esorina"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Fomba fanitsiana isa ho an'ireo elanelam-potoana ambony indrindra esorina rehefa mikajy ny persentila faha-N."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Midina"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Miakatra"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Akaiky indrindra"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Fitsipika Mahazatra ho an'ny Santionany Tsy Hita"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Fomba fikarakarana ireo elanelam-potoana 5 minitra tsy hita mandritra ny fikajiana sarany."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Esory ireo banga"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Fenoy aotra ireo toerana banga"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Avereno ampiasaina ny santionany teo aloha"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Vola ISO 4217 Mahazatra"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Kaody vola ISO 4217 misy litera telo lehibe ho an'ny kaonty sy fifanarahana vaovao."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Mpampitombo Fetran'ny Fisondrotana Tampoka amin'ny Kaontera"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Mpampitombo bps ambony indrindra amin'ny hafainganan'ny seranan'ny fifandraisana alohan'ny hamerana ny fisondrotana tampoka amin'ny kaontera."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Fiarovana, Rohy Fampandrenesana ERP, ary Fitahirizana"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Fe-potoana Farany ho an'ny Rohy Fampandrenesana Mivoaka (segondra)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Fe-potoana HTTPS voafetra ho an'ny fandefasana avy amin'ny mpampifandray faktiora ERP (1 hatramin'ny 60s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Oktety Ambony Indrindra ho an'ny Valin'ny Rohy Fampandrenesana"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Fetra ambony ho an'ny oktety vakina avy amin'ny valin'ny rohy fampandrenesana ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Lalan'ny Rakitra Fanalahidy Ivelany AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Lalana feno ao amin'ny rafi-drakitra mankany amin'ny rakitra fanalahidy 256-bit ivelany miaro ny tsiambaratelon'ny mpampifandray ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Fetra Fampitandremana ho an'ny Tetibolan'ny Fihoarana (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Isan-jaton'ny fe-potoana fihoarana isam-bolana lany alohan'ny hamoahana vinavina fampitandremana."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Fetra Maika ho an'ny Tetibolan'ny Fihoarana (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Isan-jaton'ny fe-potoana fihoarana isam-bolana lany alohan'ny hamoahana vinavina maika."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Tahirizina ny Tabilao Rejistra Rehefa Esorina"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Tahirizina ny tabilao plugin_billing_* (anisan'izany ny santionany sy ny tatitra faktiora tsy azo ovaina) rehefa esorina."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Mitaky PHP %s na vaovao kokoa ny fanampiny Fanaovana Faktiora. Mampiasa PHP %s ity mpizara ity, ka tsy napetraka na nalefa ny fanampiny."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Fitaovana"
+
+#: setup.php
+msgid "Billing"
+msgstr "Fanaovana Faktiora"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Fanaovana Faktiora Fampitana Misy Fihoarana sy Fampiasana"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Tsy alefa ny fanampiny Fanaovana Faktiora."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Mitaky PHP %s na vaovao kokoa ny fanampiny Fanaovana Faktiora."

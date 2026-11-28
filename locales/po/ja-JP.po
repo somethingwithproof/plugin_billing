@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Japanese <https://translate.cacti.net/projects/cacti/core/ja/>\n"
+"Language: ja-JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF 検証に失敗しました。ページを再読み込みして再試行してください。"
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "課金アカウントを保存しました。"
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "plugin_billing の設定を保存しました。"
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "plugin_billing の設定を保存できませんでした。"
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "サポートされていない管理者操作です。"
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "課金アカウント、契約、料金表、および ERP コネクター (管理者)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "明細書「%s」の SHA-256 整合性を検証しました。"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "明細書「%s」の検証に失敗しました: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "有効な UTC の開始日および終了日を指定してください。"
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "%s の料金計算ドライラン結果: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "明細書が見つかりません。"
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "サポートされていないオペレーター操作です。"
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "課金明細書の監査、証明検証、およびエクスポート (オペレーター)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "課金使用量と期中バースト予測"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "課金閲覧"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "課金オペレーター"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "課金管理者"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "課金使用量と予測"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "課金明細書と監査"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "課金アカウントと料金表"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "料金計算と 95 パーセンタイルのデフォルト設定"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "デフォルトのパーセンタイル"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "新規バースト可能契約に適用されるデフォルトの N パーセンタイルです (50.0〜100.0)。"
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "デフォルトの除外件数丸め方式"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "N パーセンタイル計算時に除外するピーク区間数の丸め方式です。"
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "切り捨て"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "切り上げ"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "四捨五入"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "デフォルトの欠損サンプル処理ポリシー"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "料金計算時に欠損している 5 分間隔データの処理方法を指定します。"
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "欠損区間を除外する"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "欠損スロットをゼロ埋めする"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "直前のサンプル値を引き継ぐ"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "デフォルトの ISO 4217 通貨"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "新規アカウントおよび契約に使用する 3 文字の大文字 ISO 4217 通貨コードです。"
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "カウンタースパイク上限倍率"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "カウンタースパイクを制限する前のインターフェースポート速度に対する最大 bps 倍率です。"
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "セキュリティ、ERP Webhook、およびデータ保持"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "送信 Webhook タイムアウト (秒)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "ERP 課金コネクター配信時の HTTPS タイムアウト上限です (1〜60 秒)。"
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "最大 Webhook レスポンスバイト数"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "ERP Webhook レスポンスから読み取るバイト数の上限です。"
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "AES-256-GCM 外部鍵ファイルパス"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "ERP コネクターのシークレットを保護する外部 256 ビット鍵ファイルの絶対ファイルシステムパスです。"
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "バースト予算の警告しきい値 (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "警告予測を発生させる月間バーストスロット消費率 (%) です。"
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "バースト予算の危険しきい値 (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "危険予測を発生させる月間バーストスロット消費率 (%) です。"
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "アンインストール時に台帳テーブルを保持する"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "アンインストール時に plugin_billing_* テーブル (不変のサンプルおよび明細書を含む) を保持します。"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "課金プラグインには PHP %s 以降が必要です。このサーバーでは PHP %s が動作しているため、プラグインはインストールまたは有効化されませんでした。"
+
+#: setup.php
+msgid "Utilities"
+msgstr "ユーティリティ"
+
+#: setup.php
+msgid "Billing"
+msgstr "課金"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "バースト対応トランジットおよび従量課金"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "課金プラグインは有効になっていません。"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "課金プラグインには PHP %s 以降が必要です。"

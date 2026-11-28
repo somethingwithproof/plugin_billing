@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Bulgarian <https://translate.cacti.net/projects/cacti/core/bg/>\n"
+"Language: bg-BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Проверката на CSRF е неуспешна. Презаредете страницата и опитайте отново."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Сметката за таксуване е запазена."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Конфигурацията на plugin_billing е запазена."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Неуспешно запазване на конфигурацията на plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Неподдържано администраторско действие."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Сметки за таксуване, договори, тарифи и ERP конектори (Администратор)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Целостта на SHA-256 за извлечение „%s“ е потвърдена."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Неуспешна проверка на извлечение „%s“: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Въведете валидни начална и крайна дата в UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Пробно тарифиране за %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Извлечението не е намерено."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Неподдържано операторско действие."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Одит на извлечения за таксуване, проверка на доказателства и експорти (Оператор)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Потребление за таксуване и прогнози за пиков трафик в средата на цикъла"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Преглед на таксуването"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Оператор по таксуването"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Администратор по таксуването"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Потребление и прогнози за таксуване"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Извлечения и одит за таксуване"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Сметки и тарифи за таксуване"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Настройки по подразбиране за тарифиране и 95-и перцентил"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Перцентил по подразбиране"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "N-ти перцентил по подразбиране, прилаган за нови договори с пиково таксуване (от 50.0 до 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Закръгляне на отпадналите интервали по подразбиране"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Режим на закръгляне за пиковите интервали, които се изключват при изчисляване на N-тия перцентил."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Надолу"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Нагоре"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "До най-близкото"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Политика при липсващи измервания по подразбиране"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Как се обработват липсващите 5-минутни интервали по време на тарифирането."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Изключване на празнините"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Попълване на липсващите интервали с нули"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Пренасяне на предишното измерване"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Валута по ISO 4217 по подразбиране"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Трибуквен код на валута по ISO 4217 с главни букви за нови сметки и договори."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Множител за ограничаване на скокове в брояча"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Максимален множител в bps спрямо скоростта на порта на интерфейса преди ограничаване на скоковете в брояча."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Сигурност, ERP уебхукове и съхранение"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Време за изчакване на изходящ уебхук (секунди)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Ограничено време за изчакване по HTTPS при изпращане към ERP конектори за таксуване (1 до 60 сек.)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Максимален размер на отговора от уебхук (байтове)"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Горна граница на байтовете, прочитани от отговорите на ERP уебхукове."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Път до външен ключов файл за AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Абсолютен път във файловата система до външния 256-битов ключов файл, защитаващ тайните на ERP конекторите."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Предупредителен праг за бюджета на пиковия трафик (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Процент изразходвани месечни пикови интервали преди генериране на предупредителна прогноза."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Критичен праг за бюджета на пиковия трафик (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Процент изразходвани месечни пикови интервали преди генериране на критична прогноза."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Запазване на регистърните таблици при деинсталиране"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Запазва таблиците plugin_billing_* (включително неизменяемите измервания и извлечения) при деинсталиране."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Плъгинът за таксуване изисква PHP %s или по-нова версия. Този сървър работи с PHP %s, поради което плъгинът не беше инсталиран или активиран."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Инструменти"
+
+#: setup.php
+msgid "Billing"
+msgstr "Таксуване"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Таксуване на транзит с пиков капацитет и потребление"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Плъгинът за таксуване не е активиран."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Плъгинът за таксуване изисква PHP %s или по-нова версия."

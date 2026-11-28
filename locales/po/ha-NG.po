@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Hausa <developers@cacti.net>\n"
+"Language: ha_NG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Tantancewar CSRF ta gaza. Sake loda shafin ka sake gwadawa."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "An ajiye asusun lissafin kuɗi."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "An ajiye saitin plugin_billing."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "An kasa ajiye saitin plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Matakin mai gudanarwa da ba a tallafawa ba."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Asusun Lissafin Kuɗi, Kwangiloli, Jadawalin Farashi da Masu Haɗa ERP (Mai Gudanarwa)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "An tabbatar da ingancin SHA-256 na bayanin lissafi \"%s\"."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Tantance bayanin lissafi \"%s\" ya gaza: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Samar da kwanakin farawa da ƙarewa na UTC masu inganci."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Gwajin lissafin farashi na %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Ba a sami bayanin lissafin ba."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Matakin mai gudanar da aiki da ba a tallafawa ba."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Binciken Bayanin Lissafin Kuɗi, Tabbatar da Shaida da Fitarwa (Mai Gudanar da Aiki)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Amfanin Lissafin Kuɗi da Hasashen Ƙaruwar Amfani a Tsakiyar Zagaye"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Duban Lissafin Kuɗi"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Mai Gudanar da Aikin Lissafin Kuɗi"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Gudanarwar Lissafin Kuɗi"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Amfanin Lissafin Kuɗi da Hasashe"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Bayanin Lissafin Kuɗi da Bincike"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Asusun Lissafin Kuɗi da Jadawalin Farashi"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Tsofaffin Saitunan Lissafin Farashi da Kashi na 95"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Tsohon Kashi na Lissafi"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Tsohon kashi na N da ake amfani da shi ga sabbin kwangiloli masu iya ƙaruwa (50.0 zuwa 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Tsohon Zagayen Adadin da Aka Cire"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Yanayin zagaye lamba don lokutan ƙololuwa da aka cire yayin lissafa kashi na N."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Zagaye zuwa Ƙasa"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Zagaye zuwa Sama"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Mafi Kusa"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Tsohuwar Manufar Samfurin da Ya Ɓace"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Yadda ake sarrafa lokutan mintuna 5 da suka ɓace yayin lissafin farashi."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Cire giɓi"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Cika guraben da suka ɓace da sifili"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Ci gaba da amfani da samfurin da ya gabata"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Tsohon Kuɗin ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Lambar kuɗi ta ISO 4217 mai haruffa uku masu girma don sabbin asusu da kwangiloli."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Mai Ninka Iyakar Haɓakar Ƙidaya"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Matsakaicin ninkin bps na gudun tashar haɗi kafin a takaita tsalle-tsallen ƙidaya."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Tsaro, Saƙonnin ERP na Yanar Gizo, da Ajiyar Bayanai"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Ƙarewar Lokacin Fitar Saƙon Yanar Gizo (daƙiƙa)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Ƙayyadadden lokacin ƙarewar HTTPS don isar da saƙonnin mai haɗa lissafin kuɗi na ERP (1 zuwa 60s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Matsakaicin Baitocin Amsar Saƙon Yanar Gizo"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Mafi girman adadin baitoci da aka karanta daga amsoshin saƙon yanar gizo na ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Hanyar Fayil ɗin Mabuɗin Waje na AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Cikakkiyar hanyar tsarin fayil zuwa fayil ɗin mabuɗin waje mai bit 256 wanda ke kare sirrin mai haɗa ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Iyakar Gargaɗin Kasafin Ƙaruwar Amfani (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Kashi cikin ɗari na guraben ƙaruwar amfani na wata da aka yi amfani da su kafin a fitar da hasashen gargaɗi."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Iyakar Haɗarin Kasafin Ƙaruwar Amfani (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Kashi cikin ɗari na guraben ƙaruwar amfani na wata da aka yi amfani da su kafin a fitar da hasashe mai tsanani."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Kiyaye Teburan Lissafi Lokacin Cire Manhaja"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Ajiye teburan plugin_billing_* (gami da samfurori da bayanan lissafi marasa sauyawa) lokacin cire manhaja."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Ƙarin manhajar Lissafin Kuɗi tana buƙatar PHP %s ko fiye da haka. Wannan sabar tana aiki da PHP %s, don haka ba a shigar ko kunna ƙarin manhajar ba."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Kayan Aiki"
+
+#: setup.php
+msgid "Billing"
+msgstr "Lissafin Kuɗi"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Lissafin Kuɗin Hanyar Sadarwa Mai Iya Ƙaruwa da Amfani"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Ba a kunna ƙarin manhajar Lissafin Kuɗi ba."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Ƙarin manhajar Lissafin Kuɗi tana buƙatar PHP %s ko fiye da haka."

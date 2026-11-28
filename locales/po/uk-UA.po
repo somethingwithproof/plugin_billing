@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.cacti.net/projects/cacti/core/uk/>\n"
+"Language: uk-UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Помилка перевірки CSRF. Перезавантажте сторінку та повторіть спробу."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Білінговий обліковий запис збережено."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Конфігурацію plugin_billing збережено."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Не вдалося зберегти конфігурацію plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Непідтримувана дія адміністратора."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Білінгові облікові записи, контракти, тарифи та конектори ERP (Адміністратор)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Цілісність SHA-256 виписки \"%s\" підтверджено."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Помилка перевірки виписки \"%s\": %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Вкажіть коректні дати початку та завершення в UTC."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Пробна тарифікація для %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Виписку не знайдено."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Непідтримувана дія оператора."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Аудит білінгових виписок, перевірка достовірності та експорт (Оператор)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Споживання в білінгу та проміжні прогнози пікового навантаження"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Перегляд білінгу"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Оператор білінгу"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Адміністрування білінгу"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Споживання та прогнози білінгу"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Білінгові виписки та аудит"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Білінгові облікові записи та тарифи"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Параметри тарифікації та 95-го процентиля за замовчуванням"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Процентиль за замовчуванням"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "N-й процентиль за замовчуванням для нових контрактів із піковим навантаженням (від 50.0 до 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Округлення кількості відкинутих інтервалів за замовчуванням"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Режим округлення пікових інтервалів, що відкидаються під час обчислення N-го процентиля."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "У менший бік"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "У більший бік"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "До найближчого"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Політика щодо пропущених вимірювань за замовчуванням"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Спосіб обробки пропущених 5-хвилинних інтервалів під час тарифікації."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Виключати прогалини"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Заповнювати пропущені інтервали нулями"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Переносити попереднє вимірювання"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Валюта ISO 4217 за замовчуванням"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Трилітерний код валюти ISO 4217 великими літерами для нових облікових записів і контрактів."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Множник обмеження сплесків лічильника"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Максимальний множник швидкості порту інтерфейсу в bps перед обмеженням сплесків лічильника."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Безпека, вебхуки ERP та зберігання даних"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Таймаут вихідного вебхука (секунди)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Обмежений таймаут HTTPS для доставки через білінгові конектори ERP (від 1 до 60 с)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Максимальний розмір відповіді вебхука (байти)"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Верхня межа кількості байтів, що зчитуються з відповідей вебхуків ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Шлях до зовнішнього файлу ключа AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Абсолютний шлях у файловій системі до зовнішнього 256-бітного файлу ключа, що захищає секрети конекторів ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Поріг попередження бюджету пікового навантаження (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Відсоток використаних місячних пікових інтервалів, після якого формується попереджувальний прогноз."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Критичний поріг бюджету пікового навантаження (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Відсоток використаних місячних пікових інтервалів, після якого формується критичний прогноз."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Зберігати таблиці облікового журналу під час видалення"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Зберігати таблиці plugin_billing_* (включно з незмінними вимірюваннями та виписками) під час видалення."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Плагін білінгу потребує PHP %s або новішої версії. На цьому сервері встановлено PHP %s, тому плагін не було встановлено або увімкнено."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Утиліти"
+
+#: setup.php
+msgid "Billing"
+msgstr "Білінг"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Білінг транзитного трафіку з піковим навантаженням і споживання"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Плагін білінгу не увімкнено."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Плагін білінгу потребує PHP %s або новішої версії."

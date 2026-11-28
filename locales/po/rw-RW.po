@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Kinyarwanda <developers@cacti.net>\n"
+"Language: rw_RW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Isuzuma rya CSRF ryananiwe. Ongera ufungure urupapuro hanyuma ugerageze nanone."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Konti y'imishyurire yabitswe."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Igenamiterere rya plugin_billing ryabitswe."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Ntibishoboye kubika igenamiterere rya plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Igikorwa cy'umuyobozi kitajyanye n'ibyemewe."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Konti z'Imishyurire, Amasezerano, Ibiciro n'Imiyoboro ya ERP (Umuyobozi)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Ubusugire bwa SHA-256 bw'inyandiko y'imishyurire \"%s\" bwemejwe."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Isuzuma ry'inyandiko y'imishyurire \"%s\" ryananiwe: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Tanga amatariki y'itangiriro n'ay'irangira ya UTC yemewe."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Ibarura ry'ibiciro ry'igerageza kuri %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Inyandiko y'imishyurire ntiyabonetse."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Igikorwa cy'umukozi kitajyanye n'ibyemewe."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Igenzura ry'Inyandiko z'Imishyurire, Isuzuma ry'Ibimenyetso n'Isohora (Umukozi)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Ikoreshwa ry'Imishyurire n'Iteganya ry'Irenga ryo Hagati mu Cyiciro"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Kureba Imishyurire"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Umukozi w'Imishyurire"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Umuyobozi w'Imishyurire"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Ikoreshwa n'Iteganya by'Imishyurire"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Inyandiko z'Imishyurire n'Igenzura"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Konti z'Imishyurire n'Ibiciro"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Ibarura ry'Ibiciro n'Ibyibanze by'Ijanisha rya 95"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Ijanisha Mbanziriza"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Ijanisha mbanziriza rya N rikoreshwa ku masezerano mashya ashobora kurenga ku gipimo (50.0 kugeza 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Uburyo Mbanziriza bwo Gushyira ku Mubare Wuzuye Ibyakuweho"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Uburyo bwo gushyira ku mubare wuzuye bw'intera z'igihe z'umuvuduko wo hejuru zikurwaho mu gihe habarwa ijanisha rya N."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Umubare wuzuye wo hasi"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Umubare wuzuye wo hejuru"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Umubare wuzuye wegereye"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Politiki Mbanziriza y'Ingero Zibuze"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Uburyo intera z'igihe z'iminota 5 zibuze zifatwa mu gihe cy'ibarura ry'ibiciro."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Kureka ibyuho"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Kuzuza zeru mu myanya ibuze"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Gukomeza gukoresha urugero rubanziriza"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Ifaranga Mbanziriza rya ISO 4217"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Kode y'ifaranga ya ISO 4217 y'inyuguti eshatu nkuru kuri konti n'amasezerano mashya."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Igikubisho Ntarengwa cy'Izamuka Ritunguranye rya Mubazi"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Igikubisho ntarengwa muri bps cy'umuvuduko w'icyambu cy'umuyoboro mbere yo kugabanya izamuka ritunguranye rya mubazi."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Umutekano, Ama-webhook ya ERP, n'Ibikwa"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Igihe Ntarengwa cyo Gutegereza Webhook Zisohoka (amasegonda)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Igihe ntarengwa cya HTTPS cyo kohereza amakuru y'imiyoboro y'imishyurire ya ERP (1 kugeza ku masegonda 60)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Umubare Ntarengwa wa Bayite z'Igisubizo cya Webhook"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Igipimo ntarengwa cya bayite zisomwa mu bisubizo bya webhook za ERP."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Inzira ya Dosiye y'Urufunguzo rwo Hanze rwa AES-256-GCM"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Inzira yuzuye muri sisitemu y'amadosiye igana kuri dosiye y'urufunguzo rwa biti 256 rwo hanze rurinda amabanga y'imiyoboro ya ERP."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Igipimo cy'Iburira cy'Ingengo y'Irenga (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Ijanisha ry'imyanya y'irenga yo mu kwezi yakoreshejwe mbere yo gutanga iteganya ry'iburira."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Igipimo Gikomeye cy'Ingengo y'Irenga (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Ijanisha ry'imyanya y'irenga yo mu kwezi yakoreshejwe mbere yo gutanga iteganya rikomeye."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Gukomeza Kubika Imbonerahamwe z'Ibaruramari mu gihe cyo Kuvanaho"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Gukomeza kubika imbonerahamwe za plugin_billing_* (harimo ingero n'inyandiko z'imishyurire zidahinduka) mu gihe cyo kuvanaho."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Umugereka w'Imishyurire usaba PHP %s cyangwa iyisumbuyeho. Iyi seriveri ikoresha PHP %s, bityo umugereka ntiwashyizweho cyangwa ngo wemezwe."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Ibikoresho"
+
+#: setup.php
+msgid "Billing"
+msgstr "Imishyurire"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Imishyurire y'Ubwikorezi Bushobora Kurenga ku Gipimo n'Ikoreshwa"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Umugereka w'Imishyurire ntukora."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Umugereka w'Imishyurire usaba PHP %s cyangwa iyisumbuyeho."

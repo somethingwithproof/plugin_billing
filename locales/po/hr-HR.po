@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Croatian <developers@cacti.net>\n"
+"Language: hr-HR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "Provjera CSRF tokena nije uspjela. Ponovno učitajte stranicu i pokušajte ponovno."
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "Račun za naplatu je spremljen."
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "Konfiguracija za plugin_billing je spremljena."
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "Nije moguće spremiti konfiguraciju za plugin_billing."
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "Nepodržana administratorska radnja."
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "Računi za naplatu, ugovori, tarife i ERP konektori (administrator)"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "Potvrđen je SHA-256 integritet obračuna \"%s\"."
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "Provjera obračuna \"%s\" nije uspjela: %s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "Unesite valjane početne i završne datume u UTC vremenu."
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "Probno tarifiranje za %s: %s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "Obračun nije pronađen."
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "Nepodržana operaterska radnja."
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "Revizija obračuna naplate, provjera dokaza i izvoz (operater)"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "Potrošnja za naplatu i prognoze vršnog prekoračenja usred ciklusa"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "Pregled naplate"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "Operater naplate"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "Administrator naplate"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "Potrošnja i prognoze naplate"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "Obračuni i revizija naplate"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "Računi za naplatu i tarife"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "Zadane postavke tarifiranja i 95. percentila"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "Zadani percentil"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "Zadani N-ti percentil koji se primjenjuje na nove ugovore s vršnim prekoračenjem (od 50.0 do 100.0)."
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "Zadano zaokruživanje broja odbačenih uzoraka"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "Način zaokruživanja za vršne intervale koji se odbacuju pri izračunu N-tog percentila."
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "Zaokruži naniže"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "Zaokruži naviše"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "Najbliža vrijednost"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "Zadano pravilo za nedostajuće uzorke"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "Kako se postupa s nedostajućim 5-minutnim intervalima tijekom tarifiranja."
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "Izuzmi praznine"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "Popuni nedostajuće termine nulama"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "Prenesi prethodni uzorak"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "Zadana ISO 4217 valuta"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "Troslovna ISO 4217 oznaka valute pisana velikim slovima za nove račune i ugovore."
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "Množitelj ograničenja skokova brojača"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "Najveći višekratnik brzine priključka sučelja u bps prije ograničavanja skokova brojača."
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "Sigurnost, ERP webhookovi i zadržavanje podataka"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "Vremensko ograničenje odlaznog webhooka (sekunde)"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "Ograničeno HTTPS vremensko ograničenje za isporuke ERP konektora za naplatu (od 1 do 60 s)."
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "Maksimalan broj bajtova odgovora webhooka"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "Gornja granica bajtova koji se čitaju iz odgovora ERP webhooka."
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "Putanja vanjske AES-256-GCM datoteke ključa"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "Apsolutna putanja u datotečnom sustavu do vanjske 256-bitne datoteke ključa koja štiti tajne ERP konektora."
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "Prag upozorenja kvote vršnog prekoračenja (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "Postotak potrošenih mjesečnih termina vršnog prekoračenja prije izdavanja prognoze upozorenja."
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "Kritični prag kvote vršnog prekoračenja (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "Postotak potrošenih mjesečnih termina vršnog prekoračenja prije izdavanja kritične prognoze."
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "Zadrži knjigovodstvene tablice pri deinstalaciji"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "Zadrži tablice plugin_billing_* (uključujući nepromjenjive uzorke i obračune) pri deinstalaciji."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "Dodatak za naplatu zahtijeva PHP %s ili noviji. Ovaj poslužitelj koristi PHP %s, stoga dodatak nije instaliran ni omogućen."
+
+#: setup.php
+msgid "Utilities"
+msgstr "Alati"
+
+#: setup.php
+msgid "Billing"
+msgstr "Naplata"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "Naplata prijenosa s vršnim prekoračenjem i potrošnje"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "Dodatak za naplatu nije omogućen."
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "Dodatak za naplatu zahtijeva PHP %s ili noviji."

@@ -1,0 +1,244 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-FileCopyrightText: 2026 Thomas Vincent <thomasvincent@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: 2026-11-28 00:00+0000\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://translate.cacti.net/projects/cacti/core/zh_Hant/>\n"
+"Language: zh-TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr "CSRF 驗證失敗。請重新載入頁面並重試。"
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr "已儲存計費帳戶。"
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr "已儲存 plugin_billing 組態。"
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr "無法儲存 plugin_billing 組態。"
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr "不支援的管理員操作。"
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr "計費帳戶、合約、費率表與 ERP 連接器（管理員）"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr "已驗證對帳單「%s」的 SHA-256 完整性。"
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr "對帳單「%s」驗證失敗：%s"
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr "請提供有效的 UTC 開始與結束日期。"
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr "%s 的試算計費結果：%s %s"
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr "找不到對帳單。"
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr "不支援的操作員操作。"
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr "計費對帳單稽核、證明驗證與匯出（操作員）"
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr "計費用量與週期中突發頻寬預測"
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr "計費檢視"
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr "計費操作員"
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr "計費管理員"
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr "計費用量與預測"
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr "計費對帳單與稽核"
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr "計費帳戶與費率表"
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr "計價與第 95 百分位數預設值"
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr "預設百分位數"
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr "套用於新可突發合約的預設第 N 百分位數（50.0 至 100.0）。"
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr "預設捨棄筆數取整方式"
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr "計算第 N 百分位數時，捨棄尖峰時段筆數的取整模式。"
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr "無條件捨去"
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr "無條件進位"
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr "四捨五入"
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr "預設遺漏樣本原則"
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr "計價時處理遺漏之 5 分鐘區間的方式。"
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr "排除缺漏區間"
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr "以零填補遺漏時段"
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr "沿用前一個樣本"
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr "預設 ISO 4217 幣別"
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr "新帳戶與合約所使用的三位大寫 ISO 4217 貨幣代碼。"
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr "計數器尖峰上限倍數"
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr "在限制計數器尖峰前，介面連接埠速率的最大 bps 倍數。"
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr "安全性、ERP Webhook 與保留設定"
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr "輸出 Webhook 逾時（秒）"
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr "ERP 計費連接器傳送的 HTTPS 逾時上限（1 至 60 秒）。"
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr "最大 Webhook 回應位元組數"
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr "從 ERP Webhook 回應讀取的位元組上限。"
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr "AES-256-GCM 外部金鑰檔路徑"
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr "用於保護 ERP 連接器機密的外部 256 位元金鑰檔之絕對檔案系統路徑。"
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr "突發頻寬配額警告臨界值 (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr "觸發警告預測前所消耗的每月突發時段百分比。"
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr "突發頻寬配額嚴重臨界值 (%)"
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr "觸發嚴重預測前所消耗的每月突發時段百分比。"
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr "解除安裝時保留帳本資料表"
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr "解除安裝時保留 plugin_billing_* 資料表（包含不可變樣本與對帳單）。"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr "計費外掛程式需要 PHP %s 或更新版本。此伺服器執行的是 PHP %s，因此未安裝或啟用該外掛程式。"
+
+#: setup.php
+msgid "Utilities"
+msgstr "公用程式"
+
+#: setup.php
+msgid "Billing"
+msgstr "計費"
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr "突發頻寬傳輸與用量計費"
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr "計費外掛程式未啟用。"
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr "計費外掛程式需要 PHP %s 或更新版本。"

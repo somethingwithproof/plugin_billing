@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Thomas Vincent
+# This file is distributed under the same license as the billing package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: billing 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/somethingwithproof/plugin_billing/issues\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language-Team: Thomas Vincent <thomasvincent@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: billing_admin.php billing_operator.php
+msgid "CSRF verification failed. Reload the page and retry."
+msgstr ""
+
+#: billing_admin.php
+msgid "Saved billing account."
+msgstr ""
+
+#: billing_admin.php
+msgid "Saved plugin_billing configuration."
+msgstr ""
+
+#: billing_admin.php
+msgid "Unable to save plugin_billing configuration."
+msgstr ""
+
+#: billing_admin.php
+msgid "Unsupported administrator action."
+msgstr ""
+
+#: billing_admin.php
+msgid "Billing Accounts, Contracts, Tariffs & ERP Connectors (Administrator)"
+msgstr ""
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" SHA-256 integrity verified."
+msgstr ""
+
+#: billing_operator.php
+#, php-format
+msgid "Statement \"%s\" verification failed: %s"
+msgstr ""
+
+#: billing_operator.php
+msgid "Provide valid UTC start and end dates."
+msgstr ""
+
+#: billing_operator.php
+#, php-format
+msgid "Dry-run rating for %s: %s %s"
+msgstr ""
+
+#: billing_operator.php
+msgid "Statement not found."
+msgstr ""
+
+#: billing_operator.php
+msgid "Unsupported operator action."
+msgstr ""
+
+#: billing_operator.php
+msgid "Billing Statement Audit, Proof Verification & Exports (Operator)"
+msgstr ""
+
+#: billing_view.php
+msgid "Billing Usage & Mid-Cycle Burst Forecasts"
+msgstr ""
+
+#: lib/Pages.php
+msgid "Billing View"
+msgstr ""
+
+#: lib/Pages.php
+msgid "Billing Operator"
+msgstr ""
+
+#: lib/Pages.php
+msgid "Billing Admin"
+msgstr ""
+
+#: lib/Pages.php
+msgid "Billing Usage & Forecasts"
+msgstr ""
+
+#: lib/Pages.php
+msgid "Billing Statements & Audit"
+msgstr ""
+
+#: lib/Pages.php
+msgid "Billing Accounts & Tariffs"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Rating & 95th-Percentile Defaults"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Default Percentile"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Default Nth percentile applied to new burstable contracts (50.0 to 100.0)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Default Drop-Count Rounding"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Rounding mode for peak intervals dropped when computing the Nth percentile."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Floor"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Ceiling"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Nearest"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Default Missing-Sample Policy"
+msgstr ""
+
+#: lib/Settings.php
+msgid "How missing 5-minute intervals are treated during rating."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Exclude gaps"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Zero-fill missing slots"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Carry forward previous sample"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Default ISO 4217 Currency"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Three-letter uppercase ISO 4217 currency code for new accounts and contracts."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Counter Spike Cap Multiplier"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Maximum bps multiple of interface port speed before clamping counter spikes."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Security, ERP Webhooks, and Retention"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Outbound Webhook Timeout (seconds)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Bounded HTTPS timeout for ERP billing connector deliveries (1 to 60s)."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Maximum Webhook Response Bytes"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Upper bound on bytes read from ERP webhook responses."
+msgstr ""
+
+#: lib/Settings.php
+msgid "AES-256-GCM External Keyfile Path"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Absolute filesystem path to the external 256-bit keyfile protecting ERP connector secrets."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Burst Budget Warning Threshold (%)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a warning forecast."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Burst Budget Critical Threshold (%)"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Percentage of monthly burst slots consumed before raising a critical forecast."
+msgstr ""
+
+#: lib/Settings.php
+msgid "Preserve Ledger Tables on Uninstall"
+msgstr ""
+
+#: lib/Settings.php
+msgid "Keep plugin_billing_* tables (including immutable samples and statements) when uninstalling."
+msgstr ""
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later. This server runs PHP %s, so the plugin was not installed or enabled."
+msgstr ""
+
+#: setup.php
+msgid "Utilities"
+msgstr ""
+
+#: setup.php
+msgid "Billing"
+msgstr ""
+
+#: setup.php
+msgid "Burstable Transit & Usage Billing"
+msgstr ""
+
+#: setup.php
+msgid "The Billing plugin is not enabled."
+msgstr ""
+
+#: setup.php
+#, php-format
+msgid "The Billing plugin requires PHP %s or later."
+msgstr ""
